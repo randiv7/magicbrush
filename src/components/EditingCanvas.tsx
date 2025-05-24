@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -83,7 +82,7 @@ export const EditingCanvas = ({ originalImage, processedImage, onComplete }: Edi
         maskCtx.fillRect(0, 0, maskCanvas.width, maskCanvas.height);
         
         // Save initial state
-        saveToHistory('initial', 'Initial image loaded');
+        saveToHistory('adjustment', 'Initial image loaded');
       };
       img.src = processedImage;
     }
